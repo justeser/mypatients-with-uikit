@@ -1,0 +1,15 @@
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    background: #ffffff;
+}
+
+.menu-icon{ padding-right: 0px !important; }
+
+.side-menu-margin-top-20{ margin-top:20px; }
+
+.side-button-padding-top-12{ padding-top: 12px;}
+
+.tab-padding-left-0 { padding-left: 0; }
+
+.cursor-pointer { cursor: pointer}
+.padding-right-0 { padding-right: 0px !important;}
+.table-title-width { width: 80px !important; }

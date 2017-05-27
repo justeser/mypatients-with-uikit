@@ -1,0 +1,191 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/datepicker.min.css" />
+        
+        <script src="js/jquery.js"></script>
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+        <script src="js/datepicker.min.js"></script>
+    </head>
+    <body>
+
+<div class="uk-container uk-width-xxlarge">
+<nav class="uk-navbar-container uk-margin" uk-navbar>
+    <div class="uk-navbar-left">
+        <a class="uk-logo" href="#"><img src="images/logo.png" alt=""></a>
+    </div>    
+    <div class="uk-navbar-right">   
+        <ul class="uk-navbar-nav"> 
+           <li>
+            <div>
+                <a class="uk-navbar-toggle" href="#" uk-search-icon title="Hasta Arayın" uk-tooltip></a>
+                <div class="uk-navbar-dropdown" uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !nav">
+
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-expand">
+                            <form class="uk-search uk-search-navbar uk-width-1-1">
+                                <input class="uk-search-input" type="search" placeholder="Arayın..." autofocus>
+                            </form>
+                        </div>
+                        <div class="uk-width-auto">
+                            <a class="uk-navbar-dropdown-close" href="#" uk-close></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>                 
+           </li>
+           <li>
+               <a href="#"  class="menu-icon" title="Hasta Listesi" uk-tooltip><span uk-icon="icon: list"></span></a>
+           </li>          
+            <li class="">
+                <a href="#modal-example"  class="menu-icon" title="Hasta Ekleyin" uk-tooltip uk-toggle><span uk-icon="icon: plus"></span></a>
+            </li>
+            <li class=""> 
+                <a href="#" uk-icon="icon: user" class="padding-right-0"></a>
+                <div uk-dropdown="pos: top-right">
+                <ul class="uk-nav uk-dropdown-nav uk-iconnav uk-iconnav-vertical">
+                    <li><a href=""><span uk-icon="icon:  info"></span> Profil </a></li>
+                    <li><a href=""><span uk-icon="icon:  sign-out"></span> Çıkış </a></li>
+                </ul>
+                </div>               
+            </li>              
+        </ul>  
+    </div>  
+   
+</nav>
+
+<article class="uk-article">
+   <div class="boundary-align uk-panel">
+    <h1 class="uk-heading-bullet">Just Eser 
+    <div class="uk-float-right side-button-padding-top-12"> 
+    <ul class="uk-iconnav">
+        <li class="uk-inline">
+        <div class="">
+            <a href="#" uk-icon="icon: info"></a>
+            <div uk-dropdown="pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
+            <table class="uk-table uk-table-small">
+                <tbody>
+                    <tr>
+                        <td class="table-title-width">TC </td>
+                        <td>: 28066914994</td>
+                    </tr>
+                    <tr>
+                        <td class="table-title-widt">Telefon </td>
+                        <td>: 05444049874</td>
+                    </tr>  
+                    <tr>
+                        <td class="table-title-width">Doğum T. </td>
+                        <td>: 01/05/1999</td>
+                    </tr>
+                    <tr>
+                        <td class="table-title-width">Kayıt T. </td>
+                        <td>: 27/05/2017</td>
+                    </tr>                        
+                </tbody>
+            </table>               
+            </div>
+        </div>         
+        </li>
+        <li class="uk-inline">
+        <div>
+            <a href="#" uk-icon="icon: menu"></a>
+            <div uk-dropdown="pos: top-right">
+                <ul class="uk-nav uk-dropdown-nav uk-iconnav uk-iconnav-vertical">
+                    <li>
+                        <a href="" class="test-upload" uk-form-custom>
+                            <input type="file" multiple>
+                            <span uk-icon="icon: camera"></span> Fotoğraf Ekle
+                        </a>  
+                    </li>                   
+                    <li>
+                        <a href="" class="test-upload" uk-form-custom>
+                            <input type="file" multiple>
+                            <span uk-icon="icon: copy" ></span> Belge Ekle
+                        </a>                     
+                    </li>
+                    <li><a href=""><span uk-icon="icon: file-edit"></span> Not Ekle </a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href=""><span uk-icon="icon:  pencil"></span> Bilgileri Güncelle </a></li>
+                    <li><a href=""><span uk-icon="icon:  trash"></span> Hastayı Sil </a></li>
+                </ul>
+            </div>
+        </div>           
+        </li>
+    </ul>
+    </div>
+    </h1>
+    </div>
+  <p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repellat adipisci obcaecati dolor. Itaque recusandae quaerat aperiam iusto quam, inventore cumque, neque, explicabo saepe modi fugit quia tempora, culpa minima.      
+  </p>  
+    <div class="uk-clearfix"></div>        
+    <ul uk-tab>
+        <li><a href="#">Fotoğraflar</a></li>
+        <li><a href="#">Belgeler</a></li>
+    </ul>
+
+    <ul class="uk-switcher uk-margin">
+        <li>Fotoğraflar <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+        <li>Belgeler <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+    </ul>
+</article>
+
+<!-- This is the modal -->
+<div id="modal-example" uk-modal="center: true">
+    <div class="uk-modal-dialog uk-modal-body">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h2 class="uk-modal-title">Yeni Hasta</h2>
+        <p>
+            <form class="uk-form-stacked">
+
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-horizontal-text">Adı</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input uk-form-small" id="form-horizontal-text" type="text" placeholder="adı">
+                    </div>
+                </div>
+
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-horizontal-text">TC No</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input uk-form-small" id="form-horizontal-text" type="text" placeholder="tc no">
+                    </div>
+                </div>       
+
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-horizontal-text">Telefonu</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input uk-form-small" id="form-horizontal-text" type="text" placeholder="telefonu">
+                    </div>
+                </div> 
+
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-horizontal-text">Doğum Tarihi</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input uk-form-small" id="form-horizontal-text" type="text" placeholder="doğum tarihi" data-toggle="datepicker">
+                    </div>
+                </div> 
+
+            </form>        
+        </p>
+        <p class="uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">İptal</button>
+            <button class="uk-button uk-button-primary" type="button">Kaydet</button>
+        </p>
+    </div>
+</div>
+   
+</div>
+   
+    <script>
+    $('[data-toggle="datepicker"]').datepicker({
+        format: 'dd-mm-yyyy',
+        language: 'zh-CN'
+    });
+    </script>
+    </body>
+</html>
